@@ -15,7 +15,7 @@ pipeline {
     }
     stage('Maven') {
       steps {
-        bat 'mvn clean verify sonar:sonar \   -Dsonar.projectKey=mvn-basic \  -Dsonar.host.url=http://localhost:9000 \  -Dsonar.login=63ec183205d770759baf33b18d0a4312ab94b5a8'
+        bat 'mvn clean verify sonar:sonar \\   -Dsonar.projectKey=mvn-basic \\  -Dsonar.host.url=http://localhost:9000 \\  -Dsonar.login=63ec183205d770759baf33b18d0a4312ab94b5a8'
       }
     }
 
